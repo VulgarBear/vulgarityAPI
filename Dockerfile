@@ -1,18 +1,15 @@
-FROM node:18-alpine
+FROM node:alpine AS base
 
+# Setup env variabless for yarn
+ENV NODE_ENV=production YARN_VERSION=4.6.0
+
+# install and use yarn 4.x
+RUN corepack enable && corepack prepare yarn@${YARN_VERSION}
+
+RUN mkdir /app
 WORKDIR /app
+COPY . /app
 
-# Copy package.json and yarn.lock
-COPY package.json yarn.lock ./
+RUN yarn install && yarn cache clean
 
-# Install dependencies
-RUN yarn install
-
-# Copy the rest of the application
-COPY . .
-
-# Expose the port the app runs on
-EXPOSE 8080
-
-# Command to run the application
-CMD ["yarn", "start"] 
+CMD ["yarn", "start"]
