@@ -1,6 +1,21 @@
-# VulgarityAPI
+<div align="center">
+   <br />
+      <p>
+         <img src="./assets/images/ohthevulgarity.png">
+      </p>
 
-A RESTful API for managing and retrieving insults. Built with Node.js, Express, and PostgreSQL.
+   ![Discord](https://img.shields.io/discord/1352807376104722564?style=for-the-badge)
+   ![GitHub License](https://img.shields.io/github/license/VulgarBear/vulgarityAPI?style=for-the-badge)
+   ![GitHub Tag](https://img.shields.io/github/v/tag/VulgarBear/vulgarityAPI?style=for-the-badge)
+
+   ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/vulgarbear/vulgarityAPI/latest?style=for-the-badge)
+   ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/vulgarbear/vulgarityAPI/main?style=for-the-badge)
+   [![Made with Docker](https://img.shields.io/badge/Made_with-Docker-blue?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/ "Go to Docker homepage")
+   [![Made with GH Actions](https://img.shields.io/badge/CI-GitHub_Actions-blue?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions "Go to GitHub Actions homepage")
+
+<strong>A RESTful API for managing and retrieving insults. Built with Node.js, Express, and PostgreSQL.</strong>
+</div>
+
 
 ## Features
 
